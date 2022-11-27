@@ -19,10 +19,13 @@
 //     echo "You got nothing";
 // }
 $marks = 80;
-switch ($marks)
-case ($marks >= 80 && $marks <=100):
+
+switch ($marks){
+    case ($marks >= 80 && $marks <=100):
+    
     echo "You got A+";
         break;
+    
     case ($marks >= 70 && $marks <=79):
         echo "You got A";
         break;
@@ -46,5 +49,5 @@ case ($marks >= 80 && $marks <=100):
         break;
     default:
         echo "You got nothing";
-
+}
  ?>
