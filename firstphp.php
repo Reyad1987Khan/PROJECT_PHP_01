@@ -89,22 +89,38 @@
 // }
 // $dep_info = new departments ("ICT", "2nd Floor");
 // echo $dep_info -> message ();
+// PHP CLASS AND OBJECT constract
+// class Person {
+//     public $personName;
+//     public $contract;
+//     public $designation;
+//     public $address;
 
-class Person {
-    public $personName;
-    public $contract;
-    public $designation;
-    public $address;
-
-    public function __construct ($fpersonName,$fcontract,$fdesignation,$faddress){
-        $this->personName = $fpersonName;
-        $this->contract = $fcontract;
-        $this->designation = $fdesignation;
-        $this->address = $faddress;
-        // return "Name is " . $this->personName ." Contract Nmeber ".$this->contract. "Designation" . $this->designation . " & Address" .$this->address;
-    }
-}
-$personInfo = new Person ('Reyad Khan','01735 133 961','Programmer','Mirpur-Dhaka');
-echo "Name is " . $personInfo->personName ." Contract Nmeber ".$personInfo->contract. "Designation" . $personInfo->designation . " & Address" .$personInfo->address;
-
+//     public function __construct ($fpersonName,$fcontract,$fdesignation,$faddress){
+//         $this->personName = $fpersonName;
+//         $this->contract = $fcontract;
+//         $this->designation = $fdesignation;
+//         $this->address = $faddress;
+//         // return "Name is " . $this->personName ." Contract Nmeber ".$this->contract. "Designation" . $this->designation . " & Address" .$this->address;
+//     }
+// }
+// $personInfo = new Person ('Reyad Khan','01735 133 961','Programmer','Mirpur-Dhaka');
+// echo "Name is " . $personInfo->personName ." Contract Nmeber ".$personInfo->contract. "Designation" . $personInfo->designation . " & Address" .$personInfo->address;
+// Normal CLASS AND Object
+// class Personinfo {
+//     public $name;
+//     public $cell;
+//     public $desig;
+//     public $dep;
+    
+//     public function empinfo ($pname,$pcell,$pdesig,$pdep) {
+//         $this->name = $pname;
+//         $this->cell = $pcell;
+//         $this->desig = $pdesig;
+//         $this->dep = $pdep;
+//         return "Employee Name: ".$this->name."<br>"."Contract Number :".$this->cell."<br>"." Designation ".$this->desig."<br>"." & Department :".$this->dep;
+//     }
+// }
+// $emp_info = new Personinfo ();
+// echo $emp_info->empinfo ('Fuad','016894563','Programmer','ICT Dep');
  ?>
