@@ -76,17 +76,35 @@
 // // var_dump ($department);
 // echo $department[4]; 
 // PHP CLASS AND OBJECT
-class departments {
-    public $dep_name;
-    public $dep_location;
-    public function __construct ( $dep_name, $dep_location ) {
-        $this->dep_name = $dep_name;
-        $this->dep_location = $dep_location;
-    }
-    public function message () {
-        return "The name of Department is " . $this->dep_name . " " .$this->dep_location ."!";
+// class departments {
+//     public $dep_name;
+//     public $dep_location;
+//     public function __construct ( $dep_name, $dep_location ) {
+//         $this->dep_name = $dep_name;
+//         $this->dep_location = $dep_location;
+//     }
+//     public function message () {
+//         return "The name of Department is " . $this->dep_name . " " .$this->dep_location ."!";
+//     }
+// }
+// $dep_info = new departments ("ICT", "2nd Floor");
+// echo $dep_info -> message ();
+
+class Person {
+    public $personName;
+    public $contract;
+    public $designation;
+    public $address;
+
+    public function __construct ($fpersonName,$fcontract,$fdesignation,$faddress){
+        $this->personName = $fpersonName;
+        $this->contract = $fcontract;
+        $this->designation = $fdesignation;
+        $this->address = $faddress;
+        // return "Name is " . $this->personName ." Contract Nmeber ".$this->contract. "Designation" . $this->designation . " & Address" .$this->address;
     }
 }
-$dep_info = new departments ("ICT", "2nd Floor");
-echo $dep_info -> message ();
+$personInfo = new Person ('Reyad Khan','01735 133 961','Programmer','Mirpur-Dhaka');
+echo "Name is " . $personInfo->personName ." Contract Nmeber ".$personInfo->contract. "Designation" . $personInfo->designation . " & Address" .$personInfo->address;
+
  ?>
