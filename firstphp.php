@@ -69,4 +69,24 @@
 //     echo $i."<br>";
 //     $i++;
 // }while ($i <= 1000);
+
+/* multiline comment shit + all + a */
+// PHP ARRAY
+// $department = array("ICT Department","HR Department","Finance","Comercial","Complaince");
+// // var_dump ($department);
+// echo $department[4]; 
+// PHP CLASS AND OBJECT
+class departments {
+    public $dep_name;
+    public $dep_location;
+    public function __construct ( $dep_name, $dep_location ) {
+        $this->dep_name = $dep_name;
+        $this->dep_location = $dep_location;
+    }
+    public function message () {
+        return "The name of Department is " . $this->dep_name . " " .$this->dep_location ."!";
+    }
+}
+$dep_info = new departments ("ICT", "2nd Floor");
+echo $dep_info -> message ();
  ?>
