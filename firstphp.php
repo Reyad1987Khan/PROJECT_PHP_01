@@ -113,7 +113,7 @@
 //     public $desig;
 //     public $dep;
     
-//     public function empinfo ($pname,$pcell,$pdesig,$pdep) {
+//     function empinfo ($pname,$pcell,$pdesig,$pdep) {
 //         $this->name = $pname;
 //         $this->cell = $pcell;
 //         $this->desig = $pdesig;
@@ -123,4 +123,29 @@
 // }
 // $emp_info = new Personinfo ();
 // echo $emp_info->empinfo ('Fuad','016894563','Programmer','ICT Dep');
+// PHP ARRAY
+// $departments = array("ICT","HR","Finance","Accounts","Merchandizer");
+// echo $departments [3];
+// PHP CONSTRATCTOR and DESTRUCT
+// class Books {
+//     public $bookname;
+//     public $bookauthor;
+//     public $bookcomposer;
+//     public $bookpress;
+//     public function __construct ($bookname,$bookauthor,$bookcomposer,$bookpress) {
+//         $this->bookname = $bookname;
+//         $this->bookauthor = $bookauthor;
+//         $this->bookcomposer = $bookcomposer;
+//         $this->bookpress = $bookpress;
+//     }
+//      function __destruct () {
+//         echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
+//     }
+// // function __destruct () {
+// //    echo $this->bookname .$this->bookauthor .$this->bookcomposer.$this->bookpress;
+// // }
+
+// }
+// $bookdetails = new Books("Twilight","Reyad Khan","Foud","Zinna Press LTD");
+
  ?>
