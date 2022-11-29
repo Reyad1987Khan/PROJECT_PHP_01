@@ -72,82 +72,98 @@
 
 /* multiline comment shit + all + a */
 // PHP ARRAY
-// $department = array("ICT Department","HR Department","Finance","Comercial","Complaince");
-// // var_dump ($department);
-// echo $department[4]; 
+/*$department = array("ICT Department","HR Department","Finance","Comercial","Complaince");
+// var_dump ($department);
+echo $department[4]; */
+
 // PHP CLASS AND OBJECT
-// class departments {
-//     public $dep_name;
-//     public $dep_location;
-//     public function __construct ( $dep_name, $dep_location ) {
-//         $this->dep_name = $dep_name;
-//         $this->dep_location = $dep_location;
-//     }
-//     public function message () {
-//         return "The name of Department is " . $this->dep_name . " " .$this->dep_location ."!";
-//     }
-// }
-// $dep_info = new departments ("ICT", "2nd Floor");
-// echo $dep_info -> message ();
+/*class departments {
+    public $dep_name;
+    public $dep_location;
+    public function __construct ( $dep_name, $dep_location ) {
+        $this->dep_name = $dep_name;
+        $this->dep_location = $dep_location;
+    }
+    public function message () {
+        return "The name of Department is " . $this->dep_name . " " .$this->dep_location ."!";
+    }
+}
+$dep_info = new departments ("ICT", "2nd Floor");
+echo $dep_info -> message ();*/
+
 // PHP CLASS AND OBJECT constract
-// class Person {
-//     public $personName;
-//     public $contract;
-//     public $designation;
-//     public $address;
+/*class Person {
+    public $personName;
+    public $contract;
+    public $designation;
+    public $address;
 
-//     public function __construct ($fpersonName,$fcontract,$fdesignation,$faddress){
-//         $this->personName = $fpersonName;
-//         $this->contract = $fcontract;
-//         $this->designation = $fdesignation;
-//         $this->address = $faddress;
-//         // return "Name is " . $this->personName ." Contract Nmeber ".$this->contract. "Designation" . $this->designation . " & Address" .$this->address;
-//     }
-// }
-// $personInfo = new Person ('Reyad Khan','01735 133 961','Programmer','Mirpur-Dhaka');
-// echo "Name is " . $personInfo->personName ." Contract Nmeber ".$personInfo->contract. "Designation" . $personInfo->designation . " & Address" .$personInfo->address;
+    public function __construct ($fpersonName,$fcontract,$fdesignation,$faddress){
+        $this->personName = $fpersonName;
+        $this->contract = $fcontract;
+        $this->designation = $fdesignation;
+        $this->address = $faddress;
+        // return "Name is " . $this->personName ." Contract Nmeber ".$this->contract. "Designation" . $this->designation . " & Address" .$this->address;
+    }
+}
+$personInfo = new Person ('Reyad Khan','01735 133 961','Programmer','Mirpur-Dhaka');
+echo "Name is " . $personInfo->personName ." Contract Nmeber ".$personInfo->contract. "Designation" . $personInfo->designation . " & Address" .$personInfo->address;*/
+
 // Normal CLASS AND Object
-// class Personinfo {
-//     public $name;
-//     public $cell;
-//     public $desig;
-//     public $dep;
+/*class Personinfo {
+    public $name;
+    public $cell;
+    public $desig;
+    public $dep;
     
-//     function empinfo ($pname,$pcell,$pdesig,$pdep) {
-//         $this->name = $pname;
-//         $this->cell = $pcell;
-//         $this->desig = $pdesig;
-//         $this->dep = $pdep;
-//         return "Employee Name: ".$this->name."<br>"."Contract Number :".$this->cell."<br>"." Designation ".$this->desig."<br>"." & Department :".$this->dep;
-//     }
-// }
-// $emp_info = new Personinfo ();
-// echo $emp_info->empinfo ('Fuad','016894563','Programmer','ICT Dep');
-// PHP ARRAY
-// $departments = array("ICT","HR","Finance","Accounts","Merchandizer");
-// echo $departments [3];
-// PHP CONSTRATCTOR and DESTRUCT
-// class Books {
-//     public $bookname;
-//     public $bookauthor;
-//     public $bookcomposer;
-//     public $bookpress;
-//     public function __construct ($bookname,$bookauthor,$bookcomposer,$bookpress) {
-//         $this->bookname = $bookname;
-//         $this->bookauthor = $bookauthor;
-//         $this->bookcomposer = $bookcomposer;
-//         $this->bookpress = $bookpress;
-//     }
-//      function __destruct () {
-//         echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
-//     }
-// // function __destruct () {
-// //    echo $this->bookname .$this->bookauthor .$this->bookcomposer.$this->bookpress;
-// // }
+    function empinfo ($pname,$pcell,$pdesig,$pdep) {
+        $this->name = $pname;
+        $this->cell = $pcell;
+        $this->desig = $pdesig;
+        $this->dep = $pdep;
+        return "Employee Name: ".$this->name."<br>"."Contract Number :".$this->cell."<br>"." Designation ".$this->desig."<br>"." & Department :".$this->dep;
+    }
+}
+$emp_info = new Personinfo ();
+echo $emp_info->empinfo ('Fuad','016894563','Programmer','ICT Dep');*/
 
-// }
-// $bookdetails = new Books("Twilight","Reyad Khan","Foud","Zinna Press LTD");
-echo strlen("Bangladesh");
-echo str_word_count("Bnagladesh is my country");
-echo str_replace("Palkistan","BANGLADESH","Palkistan is my mothernand");
+// PHP ARRAY
+/*$departments = array("ICT","HR","Finance","Accounts","Merchandizer");
+echo $departments [3];*/
+// PHP CONSTRATCTOR and DESTRUCT
+/*class Books {
+    public $bookname;
+    public $bookauthor;
+    public $bookcomposer;
+    public $bookpress;
+    public function __construct ($bookname,$bookauthor,$bookcomposer,$bookpress) {
+        $this->bookname = $bookname;
+        $this->bookauthor = $bookauthor;
+        $this->bookcomposer = $bookcomposer;
+        $this->bookpress = $bookpress;
+    }
+    //  function __destruct () {
+    //     echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
+    // }
+    public function bookinfo () {
+        echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
+    }
+}
+ class booklist extends Books {
+    public function myFunc () {
+        return "Thanks everyone";
+    }
+ }
+ $bookslists = new booklist ('Story','Reyad','Daluar','Zinnha Ltd','');
+ echo  $bookslists->bookinfo ();*/
+/*$booklist = new bookinfo ();*/
+/*$bookdetails = new Books("Twilight","Reyad Khan","Foud","Zinna Press LTD");*/
+
+
+
+// // echo $bookdetails->bookinfo ();
+
+// echo strlen("Bangladesh");
+// echo str_word_count("Bnagladesh is my country");
+// echo str_replace("Palkistan","BANGLADESH","Palkistan is my mothernand");
  ?>
