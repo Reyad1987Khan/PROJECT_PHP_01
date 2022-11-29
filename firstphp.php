@@ -147,5 +147,7 @@
 
 // }
 // $bookdetails = new Books("Twilight","Reyad Khan","Foud","Zinna Press LTD");
-
+echo strlen("Bangladesh");
+echo str_word_count("Bnagladesh is my country");
+echo str_replace("Palkistan","BANGLADESH","Palkistan is my mothernand");
  ?>
