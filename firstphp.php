@@ -145,19 +145,46 @@ echo $departments [3];*/
     //  function __destruct () {
     //     echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
     // }
-    public function bookinfo () {
+   public function bookinfo () {
         echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
     }
 }
  class booklist extends Books {
     public function myFunc () {
-        return "Thanks everyone";
+        return "Thanks Everyone";
     }
  }
  $bookslists = new booklist ('Story','Reyad','Daluar','Zinnha Ltd','');
  echo  $bookslists->bookinfo ();*/
 /*$booklist = new bookinfo ();*/
 /*$bookdetails = new Books("Twilight","Reyad Khan","Foud","Zinna Press LTD");*/
+
+// PHP CONSTRATCTOR and Inferitent
+/*class Books {
+    public $bookname;
+    public $bookauthor;
+    public $bookcomposer;
+    public $bookpress;
+    public function __construct ($bookname,$bookauthor,$bookcomposer,$bookpress) {
+        $this->bookname = $bookname;
+        $this->bookauthor = $bookauthor;
+        $this->bookcomposer = $bookcomposer;
+        $this->bookpress = $bookpress;
+    }
+    //  function __destruct () {
+    //     echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
+    // }
+    protected function bookinfo () {
+        echo "This Book Name is ".$this->bookname ."<br>"."The Author Name : ".$this->bookauthor ."<br>"." The Composser Name : ".$this->bookcomposer."<br>"."& the book pressed from : " .$this->bookpress;
+    }
+}
+ class booklist extends Books {
+    public function myFunc () {
+        return $this->bookinfo ();
+    }
+ }
+ $bookslists = new booklist ('Story','Reyad','Daluar','Zinnha Ltd','');
+ echo  $bookslists->myFunc ();*/
 
 
 
@@ -166,4 +193,80 @@ echo $departments [3];*/
 // echo strlen("Bangladesh");
 // echo str_word_count("Bnagladesh is my country");
 // echo str_replace("Palkistan","BANGLADESH","Palkistan is my mothernand");
+
+// PHP class & constract inheritence 
+// https://www.youtube.com/watch?v=Hvyo5aPKhcQ
+
+/*class Departments {
+    public $departments;
+    public $mgr_name;
+    public $number_emp;
+    public $location;
+
+    public function __construct ($departments, $mgr_name, $number_emp, $location) {
+               $this->departments = $departments;
+               $this->mgr_name = $mgr_name;
+               $this->number_emp = $number_emp;
+               $this->location = $location;
+    }
+    protected function dep_info () {
+        echo "Department Name: ".$this->departments."<br>"."Manager Name: ".$this->mgr_name."<br>"."Total Employees: ".$this->number_emp."<br>"."Location: ".$this->location;
+    }
+} 
+class AddDepartments extends Departments {
+    // public $new_dep;
+    // public $location;
+    public function add_dep_info () {
+        return $this->dep_info ();
+        // $this->new_dep = $new_dep;
+        // $this->location = $location;
+        // echo "New Department Name is :".$this->new_dep."<br>"." & Department Location : ".$this->location;
+    }
+}
+$dep_details = new AddDepartments('ICT Department','Mr. Ferdows Alam','20 Employees','2nd Floor HO');
+// $dep_details->add_dep_info('Finunce','3rd Floor');
+$dep_details->add_dep_info ();*/
+
+//help with Arman
+/*class Music {
+    public $bangla;
+    public $english;
+    public $hindi;
+
+     public function __construct ($bangla, $english, $hindi) {
+        $this->bangla = $bangla;
+        $this->english = $english;
+        $this->hindi = $hindi;
+     }
+     public function newAlbumList () {
+       echo $this->bangla.$this->english.$this->hindi;
+     }
+
+     public function add ($a) {
+        return 5 + $a;
+     }
+
+}
+class MusicChild extends Music {
+       public $othersMusic;
+       public function __construct ($bangla, $english, $hindi, $othersMusic) {
+        $this->othersMusic = $othersMusic;
+        $this->bangla = $bangla;
+        $this->english = $english;
+        $this->hindi = $hindi;
+       }
+       public function output () {
+        return $this->othersMusic.$this->bangla.$this->english.$this->hindi;
+        }
+
+        public function newAlbumList () {
+            echo 'Method Overiding';
+          }
+        public function add ($a) {
+            return 5 * $a;
+         }
+}
+
+$album = new MusicChild ('Hasan','Omit','Ranu','Rifat');
+echo $album->add (6);*/
  ?>
