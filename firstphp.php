@@ -269,4 +269,88 @@ class MusicChild extends Music {
 
 $album = new MusicChild ('Hasan','Omit','Ranu','Rifat');
 echo $album->add (6);*/
+
+//const 
+
+/*class MyClass {
+    const myVariable = "This my const Class and Object";
+    function myFunction () {
+            return self :: myVariable;
+    }
+} 
+// echo MyClass :: myVariable;
+$myobject = new MyClass ();
+echo $myobject->myFunction ();*/
+
+//Abstruct 
+
+/*abstract class MyAbstract {
+    public $myMessage;
+    public function __construct ($message) {
+        $this->myMessage = $message;
+    }
+    abstract public function myVoice ();
+}
+class ChildAbstract extends MyAbstract  {
+    public function myVoice () {
+        return "He told us ".$this->myMessage."!";
+    }
+}
+$myVoice = new ChildAbstract('Politic is activity of a Evil person');
+echo $myVoice->myVoice ();*/
+
+//Interface
+// https://www.youtube.com/watch?v=pItY-cACEng
+
+/*interface MyInterfaceClass {
+    public function myInterfaceFunc ();
+}
+class MyInterfaceChildClass implements MyInterfaceClass {
+    public function myInterfaceFunc () {
+        echo "This is my Country Baangladesh";
+    }
+}
+$MyInterfaceObject = new MyInterfaceChildClass ();
+echo $MyInterfaceObject->myInterfaceFunc ();
+Note : 
+1. all mathod will be "public" in Interface class.
+https://www.w3schools.com/php/php_looping_foreach.asp*/
+
+
+// Interface 2 Example
+// https://www.youtube.com/watch?v=pItY-cACEng
+
+/*interface MyInterFaceClass {
+    public function MyInterfaceFunction ();
+}
+
+class myChildInterfaceClassOne implements MyInterFaceClass {
+    public function MyInterfaceFunction () {
+        echo "Hello JavaScript";
+    }
+}
+
+class myChildInterfaceClassTwo implements MyInterFaceClass {
+    public function MyInterfaceFunction () {
+        echo "Hello JSON";
+    }
+}
+class myChildInterfaceClassThree implements MyInterFaceClass {
+    public function MyInterfaceFunction () {
+        echo "Hello PL/SQL";
+    }
+}
+class myChildInterfaceClassFour implements MyInterFaceClass {
+    public function MyInterfaceFunction () {
+        echo "Hello CSS";
+    }
+}
+$opjectOne = new myChildInterfaceClassOne ();
+$opjectTwo = new myChildInterfaceClassTwo ();
+$opjectThree = new myChildInterfaceClassThree ();
+$opjecFour = new myChildInterfaceClassFour ();
+
+$InterFaceArray = array($opjectOne, $opjectTwo, $opjectThree, $opjecFour );
+ foreach ($InterFaceArray as $value)
+ echo $value->MyInterfaceFunction ()."<br>";*/
  ?>
