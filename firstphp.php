@@ -393,4 +393,67 @@ echo "<br>";
 $SoftwareEng->Json_progFunc ();
 echo "<br>";
 $SoftwareEng->SQL_progFunc ();*/
+
+// Static
+// Static Properties and Static Methods in PHP OOP Bangla Tutorial | PHP Object Oriented Programming -9
+// https://www.youtube.com/watch?v=n7dGhyrIjeQ
+/*class StaticClass {
+    public static $myProperties = "Satatic";
+}
+echo StaticClass :: $myProperties;*/
+
+//Static 2 Example
+
+/*class StaticClass {
+    static public $myStaticProperties = "Static method";
+    public function StaticFunc (){
+        return "This is a :" .self :: $myStaticProperties ;
+    }
+}
+$myStaticObject = new StaticClass ();
+echo $myStaticObject->StaticFunc ();*/
+
+//Static Method
+
+/*class myStaticClass {
+    public static function StaticMethodFunc () {
+        echo "This is Static Method";
+    }
+    public function myStaticFunc () {
+        self :: StaticMethodFunc ();
+    }
+}
+$MethodObject = new myStaticClass();
+$MethodObject->myStaticFunc ();*/
+
+// Static Method use to Another Closs
+
+/*class StaticMethod1 {
+    public static function MethodFunc1 () {
+        echo "Method Function";
+    }
+}
+class StaticMethod2 {
+    public function MethodFunc2 () {
+        StaticMethod1 :: MethodFunc1 ();
+    }
+}
+$MethodObject = new StaticMethod2 ();
+$MethodObject->MethodFunc2 ();*/
+
+// Static Method use to Another Child Closs
+
+/*class StaticMethod1 {
+    public static function MethodFunc1 () {
+        echo "Method Function";
+    }
+}
+class StaticMethod2 extends StaticMethod1 {
+    public function MethodFunc2 () {
+       parent :: MethodFunc1 ();
+    }
+}
+$MethodObject = new StaticMethod2 ();
+$MethodObject->MethodFunc2 ();*/
+
  ?>
