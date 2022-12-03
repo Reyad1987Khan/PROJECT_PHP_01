@@ -353,4 +353,44 @@ $opjecFour = new myChildInterfaceClassFour ();
 $InterFaceArray = array($opjectOne, $opjectTwo, $opjectThree, $opjecFour );
  foreach ($InterFaceArray as $value)
  echo $value->MyInterfaceFunction ()."<br>";*/
+
+
+ //Trait 
+
+/*trait Php_programming {
+    public function Php_progFunc () {
+        echo "PHP Programming";
+    }
+}
+trait Sql_programming {
+    public function SQL_progFunc () {
+        echo "SQL Programming";
+    }
+}
+trait JavaScript_programming {
+    public function JavaScript_progFunc () {
+        echo "JavaScript Programming";
+    }
+}
+trait Json_programming {
+    public function Json_progFunc () {
+        echo "Json Programming";
+    }
+}
+
+class all_programming {
+    use Php_programming;
+    use Sql_programming;
+    use JavaScript_programming;
+    use Json_programming;
+}
+
+$SoftwareEng = new all_programming ();
+$SoftwareEng->Php_progFunc ();
+echo "<br>";
+$SoftwareEng->JavaScript_progFunc ();
+echo "<br>";
+$SoftwareEng->Json_progFunc ();
+echo "<br>";
+$SoftwareEng->SQL_progFunc ();*/
  ?>
