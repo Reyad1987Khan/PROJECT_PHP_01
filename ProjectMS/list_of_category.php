@@ -15,7 +15,27 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
 <body>
     <?php
         $sql = "select * from category";
-        
-    ?>
+
+        $query = $conn->query($sql);
+    echo "<table border='1' padding='4'>
+         <tr>
+            <th>CATEGORY ID</th>
+            <th>CATEGORY NAME</th>
+            <th>CATEGORY ENTRY DATE</th>
+            <th>Action</th>
+         </tr>";
+        while ($data = mysqli_fetch_assoc($query)){
+            $CATEGORY_ID            = $data ['CATEGORY_ID'];
+            $CATEGORY_NAME          = $data ['CATEGORY_NAME'];
+            $CATEGORY_ENTRY_DATE    = $data ['CATEGORY_ENTRY_DATE'];
+        echo "<tr>
+               <td>$CATEGORY_ID</td>
+               <td>$CATEGORY_NAME</td>
+               <td>$CATEGORY_ENTRY_DATE</td>
+               <td><a href='#'>Edit</a></td>
+              </tr>";
+        }
+    echo "</table>";
+            ?>
 </body>
 </html>

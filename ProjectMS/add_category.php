@@ -30,6 +30,10 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
 </head>
 <body>
     <?php
+    // echo '<pre>';
+    // print_r($_GET);
+    // echo '</pre>';
+    // exit;
     if (isset($_GET['CATEGORY_NAME'])) {
         $CATEGORY_NAME          = $_GET['CATEGORY_NAME'];
         $CATEGORY_ENTRY_DATE    = $_GET['CATEGORY_ENTRY_DATE'];
@@ -39,11 +43,13 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
         
         $sql = "INSERT INTO category (CATEGORY_NAME,CATEGORY_ENTRY_DATE)
                VALUES ('$CATEGORY_NAME', '$CATEGORY_ENTRY_DATE')";
-               if ($conn->query($sql) == TRUE) {
-                ECHO 'Data Inserted';
-            }else {
-                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-            }
+        // echo  $sql;
+        // exit;
+        if ($conn->query($sql) == TRUE) {
+            echo 'Data Inserted';
+        }else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
     }
     ?>
     <form action="add_category.php" method="GET">
