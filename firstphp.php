@@ -456,4 +456,18 @@ class StaticMethod2 extends StaticMethod1 {
 $MethodObject = new StaticMethod2 ();
 $MethodObject->MethodFunc2 ();*/
 
+// Array
+// Associative Array
+$age = array('Zinnah'=>35,'Arman'=>33,'Fuad'=>29,'Delower'=>29,'Mahfuj'=>34);
+
+echo "Programmers age is :".$age ['Arman']. "Years old";
+
+foreach ($age as $r=> $age) {
+    echo $r." is old ".$age;
+    echo "<br>";
+}
+
+// Multidymentional Array:
+
+
  ?>
