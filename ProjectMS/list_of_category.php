@@ -40,13 +40,13 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
          PHP Array (Associative array & Multidimensional array) | php Tutorial for Beginners Bangla - 14
          https://www.youtube.com/watch?v=PbQjFO8ySGI*/
 
-         $sql = "select * from category";
+        //  $sql = "select * from category";
 
-         $query = $conn->query($sql);
-         $myArray = mysqli_fetch_assoc($query);
-         foreach( $myArray  as $key=> $myArray) {
-            echo $key."Hello ".$myArray;
-         }
+        //  $query = $conn->query($sql);
+        //  $myArray = mysqli_fetch_assoc($query);
+        //  foreach( $myArray  as $key=> $myArray) {
+        //     echo $key."Hello ".$myArray;
+        //  }
 
         //  have to learn
         //  Superglobal Variable in PHP ($_server Variable) | php Tutorial for Beginners Bangla - 16
