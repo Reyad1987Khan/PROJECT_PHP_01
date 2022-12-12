@@ -458,13 +458,12 @@ $MethodObject->MethodFunc2 ();*/
 
 // Array
 // Associative Array
-$age = array('Zinnah'=>35,'Arman'=>33,'Fuad'=>29,'Delower'=>29,'Mahfuj'=>34);
+$ages = array('Zinnah'=>50,'Arman'=>60,'Fuad'=>40,'Delower'=>29,'Mahfuj'=>16);
 
-echo "Programmers age is :".$age ['Arman']. "Years old";
+echo "Programmers age is :".$ages ['Arman']. "Years old";
 
-foreach ($age as $r=> $age) {
-    echo $r." is old ".$age;
-    echo "<br>";
+foreach ($ages as $key=> $value) {
+    echo $key." is old ".$value;
 }
 
 // Multidymentional Array:

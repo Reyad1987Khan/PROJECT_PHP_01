@@ -14,28 +14,29 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
 </head>
 <body>
     <?php
-    //     $sql = "select * from category";
+        $sql = "select * from category";
 
-    //     $query = $conn->query($sql);
-    // echo "<table border='1' padding='4'>
-    //      <tr>
-    //         <th>CATEGORY ID</th>
-    //         <th>CATEGORY NAME</th>
-    //         <th>CATEGORY ENTRY DATE</th>
-    //         <th>Action</th>
-    //      </tr>";
-    //     while ($data = mysqli_fetch_assoc($query)){
-    //         $CATEGORY_ID            = $data ['CATEGORY_ID'];
-    //         $CATEGORY_NAME          = $data ['CATEGORY_NAME'];
-    //         $CATEGORY_ENTRY_DATE    = $data ['CATEGORY_ENTRY_DATE'];
-    //     echo "<tr>
-    //            <td>$CATEGORY_ID</td>
-    //            <td>$CATEGORY_NAME</td>
-    //            <td>$CATEGORY_ENTRY_DATE</td>
-    //            <td><a href='#'>Edit</a></td>
-    //           </tr>";
-    //     }
-    // echo "</table>";
+        $query = $conn->query($sql);
+    echo "<table border='1' padding='4'>
+         <tr>
+            <th>CATEGORY ID</th>
+            <th>CATEGORY NAME</th>
+            <th>CATEGORY ENTRY DATE</th>
+            <th>Action</th>
+         </tr>";
+        while ($data = mysqli_fetch_assoc($query)){
+            $CATEGORY_ID            = $data ['CATEGORY_ID'];
+            $CATEGORY_NAME          = $data ['CATEGORY_NAME'];
+            $CATEGORY_ENTRY_DATE    = $data ['CATEGORY_ENTRY_DATE'];
+        echo "<tr>
+               <td>$CATEGORY_ID</td>
+               <td>$CATEGORY_NAME</td>
+               <td>$CATEGORY_ENTRY_DATE</td>
+               <td><a href='Edit_category.php?id=$CATEGORY_ID'>Edit</a></td>
+              </tr>";
+        }
+    echo "</table>";
+
     /*to learn Associative and Multidymentional Array
          PHP Array (Associative array & Multidimensional array) | php Tutorial for Beginners Bangla - 14
          https://www.youtube.com/watch?v=PbQjFO8ySGI*/
@@ -49,8 +50,6 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
         //  }
 
         //  have to learn
-        //  Superglobal Variable in PHP ($_server Variable) | php Tutorial for Beginners Bangla - 16
-        //  https://www.youtube.com/watch?v=luK0sFCbEBI
         //  PHP Foreach Loop Bangla | php Tutorial for Beginners Bangla - 15
         //  https://www.youtube.com/watch?v=-e94BoArIdc
         //  Super Globales Variables in php | PHP Global Variables | PHP Basic to Advanced Tutorial Bangla - 09

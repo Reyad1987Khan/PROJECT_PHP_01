@@ -11,6 +11,11 @@ https://www.youtube.com/watch?v=5wVItH9g3eI -->
    if($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
    }
+
+    // $HostName = $_SERVER ['HTTP_HOST'];
+    // $ScriptName = $_SERVER ['SCRIPT_NAME'];
+    // echo $HostName ."". $ScriptName;
+
 // Method of Connection to MySQL Database
 // 1. Object Oreented 
 // 2. Procedural Method
